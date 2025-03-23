@@ -5,8 +5,14 @@ class SMSNotification {
     constructor(phone) {
         this.phone = phone;
     }
+    getPhone() {
+        return this.phone;
+    }
+    setPhone(phone) {
+        this.phone = phone;
+    }
     sent(message) {
-        console.log(`${this.phone} : ${message}`);
+        console.log(`ได้รับการเเจ้งเตือนจาก ${this.phone} : ${message}`);
     }
 }
 exports.SMSNotification = SMSNotification;

@@ -12,7 +12,7 @@ class Instrument {
         this.name = name;
     }
     addMusic() {
-        console.log(`I Like Me Better`);
+        return "I Like Me Better";
     }
     play() { }
 }

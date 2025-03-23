@@ -13,8 +13,8 @@ export abstract class Instrument {
         this.name = name
     }
 
-    public addMusic():void{
-        console.log(`I Like Me Better`);
+    public addMusic():string{
+        return "I Like Me Better";
     }
 
     public play():void{}

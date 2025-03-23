@@ -1,12 +1,20 @@
 import { Notification } from "./Notification";
 export class SMSNotification implements Notification {
-    private phone:number
+    private phone:string
 
-    constructor(phone:number){
+    constructor(phone:string){
+        this.phone = phone
+    }
+
+    public getPhone():string{
+        return this.phone
+    }
+
+    public setPhone(phone:string){
         this.phone = phone
     }
 
     sent(message:string): void {
-        console.log(`${this.phone} : ${message}`);
+        console.log(`ได้รับการเเจ้งเตือนจาก ${this.phone} : ${message}`);
     }
 }
